@@ -5,7 +5,7 @@ A lookup example that queries Hedera token balances for an EVM-first account
 
 ## Getting Started
 
-Provide the EVM address of the account you want to query by setting:
+Provide the EVM address (line #17 on index.mjs) of the account you want to query by setting:
 
     const accountIdStr = "0x....";
 
