@@ -1,0 +1,80 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*
+reports/
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage
+*.lcov
+
+# Build output
+dist
+build
+out
+.next
+.nuxt
+.svelte-kit
+.serverless
+.cdk.out
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.*.local
+.env.local
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.swm
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Cache
+.npm
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnpm-store
+.cache/
+.eslintcache
+.stylelintcache
+
+# Testing
+jest-html-reporters-*
+jest-stare
+junit.xml
+
+# Docker
+*.orig
+docker-compose.override.yml
+
+# Misc
+*.tgz
+*.log.*
