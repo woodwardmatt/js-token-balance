@@ -1,0 +1,45 @@
+{
+  "name": "js-token-balance",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22",
+
+  // Features add extra tools cleanly.
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/common-utils:2": {},
+    "ghcr.io/devcontainers/features/zsh:1": {}
+  },
+
+  // Automatically install dependencies after container starts.
+  "postCreateCommand": "npm install",
+
+  // Forward common ports for web apps (unused here but handy for future use).
+  "forwardPorts": [3000, 8080],
+
+  // Set environment variables if needed later.
+  "containerEnv": {
+    "NODE_ENV": "development"
+  },
+
+  // Recommended VS Code extensions inside the container.
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "eamodio.gitlens",
+        "github.vscode-github-actions"
+      ]
+    }
+  },
+
+  // Mount GitHub credentials so signing + pushing works inside Codespaces.
+  "hostRequirements": {
+    "gpu": false
+  },
+
+  "remoteUser": "vscode"
+}
